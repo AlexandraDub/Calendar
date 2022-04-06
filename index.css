@@ -14,6 +14,7 @@
     border-radius: 20px;
     width: 80%;
 }
+
 .notes_container {
     width: 20%;
     background-color: thistle;
@@ -22,6 +23,7 @@
     justify-content: flex-start;
     align-content: center;
     align-items: stretch;
+    
 }
 .notes_head {
     display: flex;
@@ -32,23 +34,17 @@
 .notes_head_date {
     padding: 5px 0;
 }
-#notes_show {
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    text-align: center;
-    border: none;
-    margin: 5px 0;
-}
-#create_new_task {
+
+.tasks_buttons {
     background-color: whitesmoke;
     border:none;
     height: 60px;
     font-size: 23px;
     text-shadow: 2px 4px 6px rosybrown;
     letter-spacing: 3px;
+    margin: 5px 0;
 }
-#create_new_task:hover, #notes_show:hover {
+.tasks_buttons:hover, #notes_show:hover {
     cursor: pointer;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
@@ -58,7 +54,7 @@
     width: 98%;
     height: 50px;
     padding: 2px;
-    margin-top: 4px;
+    margin: 5px 0;
     overflow:scroll;
     font-family: 'Open Sans', sans-serif!important;
     resize: none;
@@ -99,7 +95,7 @@
 .dates_container > .calendar_cell {
     height: 100px;
 }
-.calendar_cell{
+.calendar_cell, .week_days {
     background-color: white;
     padding: 5px;
     overflow: hidden;
@@ -111,6 +107,10 @@
 .calendar_empty_cell {
     background-color: #fcfcfc;
     
+}
+.cliked_cell {
+    border: hotpink solid 4px;
+    background-color: lavenderblush;
 }
 .dates_with_month {
     display: grid;
