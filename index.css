@@ -1,0 +1,129 @@
+.calendar {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #edecec;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.calendar_container {
+    border-radius: 20px;
+    width: 80%;
+}
+.notes_container {
+    width: 20%;
+    background-color: thistle;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: stretch;
+}
+.notes_head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.notes_head_date {
+    padding: 5px 0;
+}
+#notes_show {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+    margin: 5px 0;
+}
+#create_new_task {
+    background-color: whitesmoke;
+    border:none;
+    height: 60px;
+    font-size: 23px;
+    text-shadow: 2px 4px 6px rosybrown;
+    letter-spacing: 3px;
+}
+#create_new_task:hover, #notes_show:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    transition: ease-in-out 300ms;
+}
+.input_for_new_task {
+    width: 98%;
+    height: 50px;
+    padding: 2px;
+    margin-top: 4px;
+    overflow:scroll;
+    font-family: 'Open Sans', sans-serif!important;
+    resize: none;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+}
+.month_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: white;
+    margin: 20px 20px 0;
+    
+}
+#name_of_month {
+    font-size: 23px;
+    text-shadow: 2px 4px 6px rosybrown;
+    letter-spacing: 3px;
+}
+.days_with_dates {
+    padding: 0px 20px;
+    ;
+    border-radius: 10px;
+}
+.dates_container, .days_container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: left;
+    
+}
+.days_container {
+    margin-bottom: 2px;
+}
+.dates_container {
+    grid-gap: 2px;
+}
+.dates_container > .calendar_cell {
+    height: 100px;
+}
+.calendar_cell{
+    background-color: white;
+    padding: 5px;
+    overflow: hidden;
+}
+.today_calendar_cell {
+    background-color: #edecec;
+    border: thistle solid 2px;
+}
+.calendar_empty_cell {
+    background-color: #fcfcfc;
+    
+}
+.dates_with_month {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    align-content: center;
+    align-items: center;
+    justify-items: stretch;
+}
+.month_container > button {
+    border: none;
+    background-color: white;
+    width: 40px;
+    height: 70px;
+    cursor: pointer;
+}
