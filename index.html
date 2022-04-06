@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="calendar.css">
+        <title>Calendar</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div class="calendar">
+            <div class="calendar_container">
+                <div class="month_container">
+                    <button id="to_previous">&uHar;</button>
+                    <button id="to_next">&dHar;</button>
+                    <h2 id="name_of_month"></h2>
+                </div>
+                <div class="days_with_dates">
+                    <div class="days_container">
+                        <div class="calendar_cell"><span>Sunday</span></div>
+                        <div class="calendar_cell"><span>Monday</span></div>
+                        <div class="calendar_cell"><span>Tuesday</span></div>
+                        <div class="calendar_cell"><span>Wednesday</span></div>
+                        <div class="calendar_cell"><span>Thursday</span></div>
+                        <div class="calendar_cell"><span>Friday</span></div>
+                        <div class="calendar_cell"><span>Saturday</span></div>
+                    </div>
+                    <div class="dates_container">
+
+                    </div>
+                </div>
+            </div>
+            <div class="notes_container">
+                <header class="notes_head">
+                    <div class="notes_head_date"></div>
+                    <button id="notes_show">&xrarr;</button>
+                </header>
+                <button id="create_new_task">Add new task</button>
+                <div class="add_tasks"></div>
+            </div>
+        </div>
+
+        <script src="calendar.js"></script>
+    </body>
+</html>
