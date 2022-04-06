@@ -12,7 +12,7 @@
             rel="stylesheet">
     </head>
     <body>
-        <div class="calendar">
+        <div class="calendar" id="calendar">
             <div class="calendar_container">
                 <div class="month_container">
                     <button id="to_previous">&uHar;</button>
@@ -21,27 +21,27 @@
                 </div>
                 <div class="days_with_dates">
                     <div class="days_container">
-                        <div class="calendar_cell"><span>Sunday</span></div>
-                        <div class="calendar_cell"><span>Monday</span></div>
-                        <div class="calendar_cell"><span>Tuesday</span></div>
-                        <div class="calendar_cell"><span>Wednesday</span></div>
-                        <div class="calendar_cell"><span>Thursday</span></div>
-                        <div class="calendar_cell"><span>Friday</span></div>
-                        <div class="calendar_cell"><span>Saturday</span></div>
+                        <div class="week_days"><span>Sunday</span></div>
+                        <div class="week_days"><span>Monday</span></div>
+                        <div class="week_days"><span>Tuesday</span></div>
+                        <div class="week_days"><span>Wednesday</span></div>
+                        <div class="week_days"><span>Thursday</span></div>
+                        <div class="week_days"><span>Friday</span></div>
+                        <div class="week_days"><span>Saturday</span></div>
                     </div>
                     <div class="dates_container">
 
                     </div>
                 </div>
             </div>
-            <div class="notes_container">
+            <!-- <div class="notes_container">
                 <header class="notes_head">
                     <div class="notes_head_date"></div>
-                    <button id="notes_show">&xrarr;</button>
                 </header>
-                <button id="create_new_task">Add new task</button>
+                <button id="create_new_task" class="tasks_buttons">Add new task</button>
                 <div class="add_tasks"></div>
-            </div>
+                <button id="save_task" class="tasks_buttons">Save task</button>
+            </div> -->
         </div>
 
         <script src="calendar.js"></script>
