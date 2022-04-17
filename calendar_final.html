@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="calendar.css">
+        <title>Calendar</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div class="calendar" id="calendar">
+            <div class="calendar_container">
+                <div class="month_container">
+                    <button id="to_previous">&uHar;</button>
+                    <button id="to_next">&dHar;</button>
+                    <h2 id="name_of_month"></h2>
+                </div>
+                <div class="days_with_dates">
+                    <div class="days_container">
+                        <div class="week_days"><span>Sunday</span></div>
+                        <div class="week_days"><span>Monday</span></div>
+                        <div class="week_days"><span>Tuesday</span></div>
+                        <div class="week_days"><span>Wednesday</span></div>
+                        <div class="week_days"><span>Thursday</span></div>
+                        <div class="week_days"><span>Friday</span></div>
+                        <div class="week_days"><span>Saturday</span></div>
+                    </div>
+                    <div class="dates_container"></div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <script src="calendar.js"></script>
+    </body>
+</html>
